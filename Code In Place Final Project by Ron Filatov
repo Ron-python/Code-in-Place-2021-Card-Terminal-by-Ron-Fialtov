@@ -1,0 +1,32 @@
+import time
+
+def main():
+    print('Hello, the password for your new card is "5363". You may now test your card.')
+    programm()
+
+
+def programm():
+    print('Please insert card.')
+    print('To confirm you put in the card write "Confirm".')
+    if input('Please confirm:') == ('Confirm'):
+        print('The progress will start now')
+        time.sleep(2)
+        if input('Code:') == ('5363'):
+          print('Code is True. Thx for purchasing code in place T-Shirt. Have a nice day.')
+        else:
+          print('Wrong, try again')
+          if input('Code:') == ('5363'):
+            print('Code is True. Thx for purchasing code in place T-Shirt. Have a nice day.')
+          else:
+            print('Last, try')
+            if input('Code:') == ('5363'):
+              print('Code is True. Thx for purchasing code in place T-Shirt. Have a nice day.')
+            else:
+              print('Card was blocked.')
+    else:
+        print('The progress will be stopped know!')
+    
+
+
+if __name__ == '__main__':
+    main()
